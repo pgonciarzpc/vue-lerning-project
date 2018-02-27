@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="vue.js"></script>
+  </head>
+  <body>
+    <div id="vue-app">
+      <!-- <h1>Data Binding</h1>
+      <a v-bind:href="website">The Net Ninja</a>
+      <input type="text" name="" v-bind:value="job" />
+      <p v-html="websiteTag"></p> -->
+
+      <!-- <h1>Events</h1>
+      <button type="button" name="add" v-on:click.once="add(1)">Add a Year</button>
+      <button type="button" name="subtract" v-on:click="subtract(1)">Subtract a Year</button>
+      <button type="button" name="add" v-on:dblclick="add(10)">Add 10 Years</button>
+      <button type="button" name="subtract" v-on:dblclick="subtract(10)">Subtract 10 Years</button>
+      <p>My age is {{ age }}</p>
+
+      <div id="canvas" v-on:mousemove="updateXY">{{ x }}, {{ y }}</div>
+      <a v-on:click.prevent="click" href="http://www.thenetninja.co.uk">The Net Ninja</a> -->
+
+      <h1>Keyboard Events</h1>
+      <label>Name:</label>
+      <input type="text" v-model="name"/>
+      <span>{{ name }}</span>
+
+      <label>Age:</label>
+      <input type="text" v-model="age"/>
+      <span>{{ age }}</span>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>
