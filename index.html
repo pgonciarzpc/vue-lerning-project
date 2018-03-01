@@ -8,7 +8,38 @@
   </head>
   <body>
     <div id="vue-app">
+      <ol>
+        <li v-for="todo in todos">
+          {{ todo.text }}
+        </li>
+      </ol>
+    </div>
 
+    <div id="app-5">
+      <p>{{ message }}</p>
+      <button type="button" name="button" v-on:click="reverseMessage">Reverse Message</button>
+    </div>
+
+    <div id="app-6">
+      <p>{{ message }}</p>
+      <input v-model="message">
+    </div>
+
+    <div id="app-7">
+      <ol>
+        <todo-item v-for="item in groceryList" v-bind:todo1="item"></todo-item>
+      </ol>
+    </div>
+
+    <span id="some-el" v-once>This will never change: {{ message }}</span>
+
+    <div id="example">
+      <p>Original message: "{{ message }}"</p>
+      <p>Computed reversed message: "{{ reversedMessage }}"</p>
+    </div>
+
+    <div id="demoName">
+      {{ fullName }}
     </div>
 
     <script src="app.js"></script>
